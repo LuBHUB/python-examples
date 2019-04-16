@@ -21,7 +21,7 @@ print('The first letter of your name is:')
 print(name[0])
 
 # Print out how many letters their name has.
-# The len() function  tells us how many characters a string contains.
+# The len() function tells us how many characters a string contains.
 # ('len' is short for 'length'.)
 print('Your name has this many letters:')
 print(len(name))

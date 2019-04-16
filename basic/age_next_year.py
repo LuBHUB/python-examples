@@ -15,7 +15,7 @@ A program to get a user's age and tell them their age in one year.
 
 # The first thing we do in this program is get the user's age.
 # The input() function prints a prompt at the console.
-# Whatever the user stores there becomes the output of the input() function.
+# Whatever the user types there becomes the output of the input() function.
 # In this case, we store the output in a variable that we call 'age'.
 age = input('Age please: ')
 
@@ -23,8 +23,8 @@ age = input('Age please: ')
 # ('string' means text).
 # This is the case even if the user types numbers.
 # Python is strict about treating data as numbers or text.
-# We can't just do math with a piece of text.
-# So first we must convert the user's input into an int.
+# We can't do math with a piece of text.
+# So first we must convert the user's input into an 'int'.
 # ('int' means integer, i.e. a whole number).
 age = int(age)
 
@@ -32,7 +32,6 @@ age = int(age)
 # Anything we print will be displayed in the console.
 # Here we print first some explanatory text.
 # Text in Python must be enclosed in quotes ''.
-# Otherwise Python would think we are referring to variables or functions.
 # Then we print the answer, using the 'age' variable that we assigned above.
 print('In one year you will be:')
 print(age + 1)
