@@ -5,6 +5,7 @@ Examples for the Basic Python class.
 ## [age next year](age_next_year.py)
 
 Ask for the user's age and then tell them how old they will be in one year's time. Introduces:
+* comments
 * `input()` and `print()` functions
 * variables and assignment
 * arithmetic
