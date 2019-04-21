@@ -35,7 +35,7 @@ An example IPython notebook, plotting a difference equation with numpy and matpl
 
 An example single-function module, for shuffling an image in blocks, like in a puzzle.
 
-* imaegio
+* imageio
 * rasing an exception
 * numpy array manipulation
 * `__name__`
