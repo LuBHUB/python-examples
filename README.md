@@ -40,3 +40,9 @@ An example single-function module, for shuffling an image in blocks, like in a p
 * numpy array manipulation
 * `__name__`
 
+### [quotes](quotes/quotes.py)
+
+An example of a slightly longer module, for processing quoted text in strings.
+
+* regular expressions
+
