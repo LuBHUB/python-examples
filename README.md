@@ -19,6 +19,13 @@ Ask for the user's name and then tell them some facts about their name.
 * `len()` function
 * indexing
 
+### [more name stuff](more_name_stuff/more_name_stuff.py)
+
+Ask for the user's name and then print it out in a few different ways.
+
+* methods
+* very basic string formatting
+
 ## Advanced
 
 Examples for the Advanced Python class.
