@@ -37,7 +37,7 @@ def generate(n, y0, beta):
     beta -- float tuning parameter governing the form of the time series (suggested values between 0. and 4.)
     
     Returns:
-    generator object yielding successive y values in the series
+    generator object yielding successive float y values in the series
     """
     y = y0
     for i in range(n):
