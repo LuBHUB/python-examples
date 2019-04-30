@@ -38,6 +38,13 @@ An example IPython notebook, plotting a difference equation with numpy and matpl
 * markdown
 * mathjax
 
+### [the hump (as a generator)](the_hump_generator/the_hump_generator.ipynb)
+
+A brief introduction to generators, using the same function as in the 'hump' example.
+
+* generators
+* `%timeit`
+
 ### [imscramble](imscramble/imscramble.py)
 
 An example single-function module, for shuffling an image in blocks, like in a puzzle.
