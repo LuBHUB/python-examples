@@ -26,6 +26,20 @@ Ask for the user's name and then print it out in a few different ways.
 * methods
 * very basic string formatting
 
+### [alphabetical order](alphabetical_order/alphabetical_order.py)
+
+Sort some words into alphabetical order.
+
+* lists
+* mutability / immutability
+* `for` loops
+
+### [Q and A](q_and_a/q_and_a.py)
+
+Ask the user some questions then repeat their answers.
+
+* dictionaries
+
 ## Advanced
 
 Examples for the Advanced Python class.
