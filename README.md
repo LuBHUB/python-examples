@@ -68,6 +68,14 @@ An example single-function module, for shuffling an image in blocks, like in a p
 * numpy array manipulation
 * `__name__`
 
+### [network](network/networks.ipynb)
+
+An example of a module defining classes, for representing networks as adjacency matrices.
+
+* classes
+* inheritance
+* pygraphviz
+
 ### [quotes](quotes/quotes.py)
 
 An example of a slightly longer module, for processing quoted text in strings.
