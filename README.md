@@ -26,6 +26,13 @@ Ask for the user's name and then print it out in a few different ways.
 * methods
 * very basic string formatting
 
+### [yet more name stuff](yet_more_name_stuff/yet_more_name_stuff.py)
+
+Ask for the user's name and check for something to say about it.
+
+* logical conditions
+* `if elif` statements
+
 ### [alphabetical order](alphabetical_order/alphabetical_order.py)
 
 Sort some words into alphabetical order.
@@ -39,6 +46,19 @@ Sort some words into alphabetical order.
 Ask the user some questions then repeat their answers.
 
 * dictionaries
+
+### [guess the number](guess_the_number/guess_the_number.py)
+
+Play a game of 'guess the number'.
+
+* `while` loops
+* `try except`
+
+### [guess the animal](guess_the_animal/guess_the_animal.py)
+
+Play a game of 'guess the animal'.
+
+* `break`
 
 ## Advanced
 
@@ -66,7 +86,6 @@ An example single-function module, for shuffling an image in blocks, like in a p
 * imageio
 * rasing an exception
 * numpy array manipulation
-* `__name__`
 
 ### [network](network/networks.ipynb)
 
@@ -75,6 +94,14 @@ An example of a module defining classes, for representing networks as adjacency 
 * classes
 * inheritance
 * pygraphviz
+
+### [more networks](more_networks/more_networks.ipynb)
+
+An example of a module with submodules. Based on an extension of the network example.
+
+* multi-file programs
+* module structure
+* `__name__`
 
 ### [quotes](quotes/quotes.py)
 
