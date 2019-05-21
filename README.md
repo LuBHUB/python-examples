@@ -60,6 +60,15 @@ Play a game of 'guess the animal'.
 
 * `break`
 
+### [initials](initials/initials.py)
+
+An example module with functions for making initials from names.
+
+* functions
+* docstrings
+* arguments with default values
+* variable numbers of arguments
+
 ## Advanced
 
 Examples for the Advanced Python class.
