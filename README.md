@@ -1,4 +1,4 @@
-## Basic
+# Basic
 
 Examples for the Basic Python class.
 
@@ -69,7 +69,7 @@ An example module with functions for making initials from names.
 * arguments with default values
 * variable numbers of arguments
 
-## Advanced
+# Advanced
 
 Examples for the Advanced Python class.
 
