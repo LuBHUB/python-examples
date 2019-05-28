@@ -69,8 +69,6 @@ An example module with functions for making initials from names.
 * arguments with default values
 * variable numbers of arguments
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### [wordplay](wordplay/main.py)
 
 An example of importing and using a module, for creating spoonerisms.
@@ -79,12 +77,6 @@ An example of importing and using a module, for creating spoonerisms.
 * namespaces
 
 ## Advanced
-=======
-# Advanced
->>>>>>> a485c1de2fdd71bcded9ff6f4e1cd47f04d1ff7f
-=======
-## Advanced
->>>>>>> bef33c0af5e29b383adcc2658235d25b837dfe45
 
 Examples for the Advanced Python class.
 
