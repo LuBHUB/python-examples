@@ -87,9 +87,16 @@ A demonstration of a few modules from the standard library.
 
 ### [birth_weights](birth_weights/birth_weights.py)
 
-Summarize the [birth weights](https://www.rdocumentation.org/packages/MASS/topics/birthwt) data, using pandas and numpy.
+Summarize the [birth weights](https://www.rdocumentation.org/packages/MASS/topics/birthwt) data.
 
 * pandas
+
+### [webpage](webpage/webpage.py)
+
+Get a paragraph of text from a [webpage](http://www.mind-and-brain.de/home/).
+
+* requests
+* BeautifulSoup
 
 ## Advanced
 

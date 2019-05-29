@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-A program to explore the birth weights data.
-Demonstrating very basic use of pandas, and numpy.
+A program to summarize the birth weights data.
+Demonstrating basic use of pandas.
 """
 
 # For more specialized tasks we need modules from outside the standard library.
@@ -27,7 +27,7 @@ import numpy as np
 
 # The pandas module allows Python to work with tables of data.
 # It can load these data from various file types.
-# Here we use it to load an example table.
+# Here we use it to load an example table from a csv file.
 bw = pd.read_csv('birth_weights.csv')
 
 # The resulting variable is a 'data frame'.
@@ -41,12 +41,12 @@ print(bw)
 # Indexing with the [] retrieves a single column from the data frame.
 print(bw['Birth_weight'])
 
-# numpy's statistical functions can summarize the data in a column.
+# numpy's statistical functions can summarize the values in a column.
 print('Mean birth weight (kg):')
 print(np.mean(bw['Birth_weight']))
 
 # The .agg() method of a data frame produces a summary.
-# ('agg' is short for 'aggregate', which means summarize.)
+# ('agg' is short for 'aggregate'.)
 # The first input argument is a dictionary.
 # The keys of the dictionary specify what columns we want to summarize.
 # The values of the dictionary are lists of functions with which to summarize.
