@@ -85,6 +85,12 @@ A demonstration of a few modules from the standard library.
 * random
 * os
 
+### [birth_weights](birth_weights/birth_weights.py)
+
+Summarize the [birth weights](https://www.rdocumentation.org/packages/MASS/topics/birthwt) data, using pandas and numpy.
+
+* pandas
+
 ## Advanced
 
 Examples for the Advanced Python class.
