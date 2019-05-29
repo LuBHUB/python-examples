@@ -76,6 +76,15 @@ An example of importing and using a module, for creating spoonerisms.
 * imports
 * namespaces
 
+### [standard_library](standard_library/standard_library.py)
+
+A demonstration of a few modules from the standard library.
+
+* webbrowser
+* math
+* random
+* os
+
 ## Advanced
 
 Examples for the Advanced Python class.

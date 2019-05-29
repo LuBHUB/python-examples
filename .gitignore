@@ -3,6 +3,9 @@
 # Example image file
 imscramble/scrambled_example.jpg
 
+# Example new directory
+standard_library/example_folder/*
+
 
 # General Python ignores:
 
