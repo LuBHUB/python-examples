@@ -102,6 +102,14 @@ Get a paragraph of text from a [webpage](http://www.mind-and-brain.de/home/).
 
 Examples for the Advanced Python class.
 
+### [git](git/git_examples.sh)
+
+Some example bash commands for using git.
+
+* bash
+* git
+* GitHub
+
 ### [the hump](the_hump/the_hump.ipynb)
 
 An example IPython notebook, plotting a difference equation with numpy and matplotlib.
