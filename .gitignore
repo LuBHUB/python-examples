@@ -6,6 +6,15 @@ imscramble/scrambled_example.jpg
 # Example new directory
 standard_library/example_folder/*
 
+# Example SQLite database
+SQL/example.db
+
+# Cloned GitHub repository
+git/example/*
+
+# My API key for musixmatch.com
+musixmatch/.musixmatch_API_key.txt
+
 
 # General Python ignores:
 
