@@ -155,3 +155,9 @@ An example of a slightly longer module, for processing quoted text in strings.
 
 * regular expressions
 
+### [SQL](SQL/)
+
+Examples of SQL, either just as SQL or executed from Python via `sqlite3`.
+
+* SQL
+
