@@ -5,9 +5,6 @@
 
 -- Comments in SQL are preceded by two dashes.
 
--- The . commands are special to the sqlite3 command line tool, not general to SQL.
--- This one just turns on the 'echo' (i.e. ensures the commands below are printed out as they are run).
-.echo on
 
 -- Select all columns from a table.
 SELECT * FROM artists;
