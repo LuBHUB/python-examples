@@ -1,7 +1,7 @@
 # Project-specific ignores:
 
-# Example image file
-imscramble/scrambled_example.jpg
+# Example image files
+imscramble/scrambled_example_*.jpg
 
 # Example new directory
 standard_library/example_folder/*

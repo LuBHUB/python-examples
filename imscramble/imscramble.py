@@ -21,10 +21,10 @@ def imscramble(fileName, blockSize=1, fileNameOut=None):
     blockSize   -- width of the squares to shuffle (in px)
                    defaults to 1 (i.e. scramble all pixels)
     fileNameOut -- path to save scrambled image to
-                   defaults to 'scrambled_' + fileName
+                   defaults to None (no image file is written)
     
     Returns:
-    scrambled image as numpy.array.
+    scrambled image as numpy.array
     """
     
     # Subsequent steps are faster with a numpy array than an imageio array.
@@ -58,9 +58,8 @@ def imscramble(fileName, blockSize=1, fileNameOut=None):
         img = numpy.concatenate(img, axis=0)
     
     # Write the new image file.
-    if not fileNameOut:
-        fileNameOut = 'scrambled_' + fileName
-    imageio.imwrite(fileNameOut, img)
+    if fileNameOut:
+        imageio.imwrite(fileNameOut, img)
     
     return img
 
@@ -70,5 +69,10 @@ if __name__ == '__main__':
     
     import webbrowser
     
-    imscramble('example.jpg', blockSize=500)
-    webbrowser.open('scrambled_example.jpg')
+    # Test block-wise scrambling
+    imscramble('example.jpg', blockSize=500, fileNameOut='scrambled_example.jpg')
+    webbrowser.open('scrambled_example_1.jpg')
+    
+    # Test single-pixel scrambling.
+    imscramble('example.jpg', fileNameOut='scrambled_example_2.jpg')
+    webbrowser.open('scrambled_example_2.jpg')
