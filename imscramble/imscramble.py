@@ -70,7 +70,7 @@ if __name__ == '__main__':
     import webbrowser
     
     # Test block-wise scrambling
-    imscramble('example.jpg', blockSize=500, fileNameOut='scrambled_example.jpg')
+    imscramble('example.jpg', blockSize=500, fileNameOut='scrambled_example_1.jpg')
     webbrowser.open('scrambled_example_1.jpg')
     
     # Test single-pixel scrambling.
