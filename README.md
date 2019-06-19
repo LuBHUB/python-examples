@@ -10,7 +10,7 @@ Ask for the user's age and then tell them how old they will be in one year's tim
 * `input()` and `print()` functions
 * variables and assignment
 * arithmetic
-* conversion from `str` to `int`
+* type conversion
 
 ### [name stuff](name_stuff/name_stuff.py)
 
@@ -24,7 +24,7 @@ Ask for the user's name and then tell them some facts about their name.
 Ask for the user's name and then print it out in a few different ways.
 
 * methods
-* very basic string formatting
+* basic string formatting
 
 ### [yet more name stuff](yet_more_name_stuff/yet_more_name_stuff.py)
 
@@ -76,7 +76,7 @@ An example of importing and using a module, for creating spoonerisms.
 * imports
 * namespaces
 
-### [standard_library](standard_library/standard_library.py)
+### [standard library](standard_library/standard_library.py)
 
 A demonstration of a few modules from the standard library.
 
@@ -85,7 +85,7 @@ A demonstration of a few modules from the standard library.
 * random
 * os
 
-### [birth_weights](birth_weights/birth_weights.py)
+### [birth weights](birth_weights/birth_weights.py)
 
 Summarize the [birth weights](https://www.rdocumentation.org/packages/MASS/topics/birthwt) data.
 
@@ -116,6 +116,13 @@ Store words in a text file.
 
 * writing files
 * appending to files
+
+### [rose tint](rose_tint/rose_tint.py)
+
+Produce a rose-tinted version of an image.
+
+* imageio
+* arrays
 
 ## Advanced
 
@@ -148,7 +155,6 @@ A brief introduction to generators, using the same function as in the 'hump' exa
 
 An example single-function module, for shuffling an image in blocks, like in a puzzle.
 
-* imageio
 * rasing an exception
 * numpy array manipulation
 
@@ -170,13 +176,13 @@ An example of a module with submodules. Based on an extension of the network exa
 
 ### [quotes](quotes/quotes.py)
 
-An example of a slightly longer module, for processing quoted text in strings.
+An example module, for processing quoted text in strings.
 
 * regular expressions
 
 ### [SQL](SQL/)
 
-Examples of SQL, either just as SQL or executed from Python via `sqlite3`.
+Examples of SQL, either just as SQL or executed from Python via sqlite3.
 
 * SQL
 

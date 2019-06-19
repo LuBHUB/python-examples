@@ -1,15 +1,10 @@
 # Project-specific ignores:
 
-# Example image files
-imscramble/scrambled_example_*.jpg
-
-# Example new directory
+# Files written when running examples.
 standard_library/example_folder/*
-
-# Example written text file
 vocab/vocab.txt
-
-# Example SQLite database
+rose_tint/tinted_*
+imscramble/scrambled_example_*.jpg
 SQL/example.db
 
 # Cloned GitHub repository
