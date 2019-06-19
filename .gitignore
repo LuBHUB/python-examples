@@ -6,6 +6,9 @@ imscramble/scrambled_example_*.jpg
 # Example new directory
 standard_library/example_folder/*
 
+# Example written text file
+vocab/vocab.txt
+
 # Example SQLite database
 SQL/example.db
 

@@ -98,6 +98,25 @@ Get a paragraph of text from a [webpage](http://www.mind-and-brain.de/home/).
 * requests
 * BeautifulSoup
 
+### [wordcount](wordcount/wordcount.py)
+
+Count words and other things in a text file.
+
+* reading files
+
+### [linesearch](linesearch/linesearch.py)
+
+Search for the first occurrence of a phrase in a text file.
+
+* reading files with loops
+
+### [vocab](vocab/vocab.py)
+
+Store words in a text file.
+
+* writing files
+* appending to files
+
 ## Advanced
 
 Examples for the Advanced Python class.
