@@ -21,7 +21,7 @@ import json
 # If we do this for the example JSON file here,
 # we see that the text is structured like Python code,
 # with parentheses, commas, quotes, etc.
-filename = 'example_vocab.json'
+filename = 'example.json'
 contents = open(filename).read()
 print(contents)
 
