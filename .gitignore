@@ -3,6 +3,8 @@
 # Files written when running examples.
 standard_library/example_folder/*
 vocab/vocab.txt
+vocab_test/my_vocab.json
+UK_US_spelling/spellings.json
 rose_tint/tinted_*
 imscramble/scrambled_example_*.jpg
 SQL/example.db

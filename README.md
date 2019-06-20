@@ -117,12 +117,25 @@ Store words in a text file.
 * writing files
 * appending to files
 
+### [vocab test](vocab_test/vocab_test.py)
+
+Store words and definitions as a dictionary in a JSON file.
+
+* json
+
 ### [rose tint](rose_tint/rose_tint.py)
 
 Produce a rose-tinted version of an image.
 
 * imageio
 * arrays
+
+### [UK-US spelling](UK_US_spelling/UK_US_spelling.py)
+
+A slightly more elaborate script bringing a few techniques together to scrape a [webpage](http://www.tysto.com/uk-us-spelling-list.html).
+
+* exceptions
+* dictionary comprehensions
 
 ## Advanced
 
@@ -149,13 +162,20 @@ An example IPython notebook, plotting a difference equation with numpy and matpl
 A brief introduction to generators, using the same function as in the 'hump' example.
 
 * generators
-* `%timeit`
+* memory use
+
+### [UKwargs](UKwargs/ukwargs.py)
+
+A brief introduction to decorators, using a slightly silly example.
+
+* decorators
+* functools
+* basic testing
 
 ### [imscramble](imscramble/imscramble.py)
 
-An example single-function module, for shuffling an image in blocks, like in a puzzle.
+Shuffle an image in blocks, like in a puzzle.
 
-* rasing an exception
 * numpy array manipulation
 
 ### [network](network/networks.ipynb)
@@ -172,11 +192,10 @@ An example of a module with submodules. Based on an extension of the network exa
 
 * multi-file programs
 * module structure
-* `__name__`
 
 ### [quotes](quotes/quotes.py)
 
-An example module, for processing quoted text in strings.
+Process quoted text in strings.
 
 * regular expressions
 
