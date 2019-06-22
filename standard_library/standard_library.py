@@ -26,8 +26,9 @@ import webbrowser
 # Let's use it to open the Python documentation page on the standard library.
 webbrowser.open('https://docs.python.org/3/library/')
 
-# The same function can open a file.
-# It opens it using your default program for that file type.
+# The same function can sometimes open a file.
+# It opens it using the default program for that file type.
+# However, this isn't guaranteed to work on every operating system.
 webbrowser.open('example.jpg')
 
 

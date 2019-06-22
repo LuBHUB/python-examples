@@ -8,6 +8,8 @@ UK_US_spelling/spellings.json
 rose_tint/tinted_*
 imscramble/scrambled_example_*.jpg
 SQL/example.db
+optimization/.temp.txt
+optimization/temp_profile_output.txt
 
 # Cloned GitHub repository
 git/example/*

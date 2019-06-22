@@ -162,7 +162,7 @@ An example IPython notebook, plotting a difference equation with numpy and matpl
 A brief introduction to generators, using the same function as in the 'hump' example.
 
 * generators
-* memory use
+* memory usage
 
 ### [UKwargs](UKwargs/ukwargs.py)
 
@@ -171,6 +171,14 @@ A brief introduction to decorators, using a slightly silly example.
 * decorators
 * functools
 * basic testing
+
+### [optimization](optimization/optimization.ipynb)
+
+Some examples of execution time and memory usage for a few basic functions.
+
+* timeit
+* line_profiler
+* memory_profiler
 
 ### [imscramble](imscramble/imscramble.py)
 
