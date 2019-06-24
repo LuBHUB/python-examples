@@ -137,6 +137,19 @@ A slightly more elaborate script bringing a few techniques together to scrape a 
 * exceptions
 * dictionary comprehensions
 
+## Psychopy
+
+Examples for [Psychopy](https://www.psychopy.org/).
+
+### [RT](RT/RT.py)
+
+Record the user's reaction times responding to letters. An introduction to Psychopy's most basic features.
+
+* opening a window
+* text stimuli
+* keyboard responses
+* simple timing
+
 ## Advanced
 
 Examples for the Advanced Python class.
