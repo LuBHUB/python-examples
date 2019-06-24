@@ -10,6 +10,7 @@ imscramble/scrambled_example_*.jpg
 SQL/example.db
 optimization/.temp.txt
 optimization/temp_profile_output.txt
+RT/results.csv
 
 # Cloned GitHub repository
 git/example/*
