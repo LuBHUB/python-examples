@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-A short demonstration of psychopy, testing the speed of the user's reactions.
+A short demonstration of Psychopy, testing the speed of the user's reactions.
 The user sees letters and must press the corresponding letter key.
 """
 
 import webbrowser
 
-# psychopy contains various modules for handling different things.
+# Psychopy contains various modules for handling different things.
 # We import here only those that we need:
 # visual -- opens windows and displays things in them
 # core   -- does a few basic things, including timing when things happen
@@ -105,7 +105,7 @@ for letter in letters:
     line = lineFormat.format(letter, key, rt)
     f.write(line)
     
-    # In addition just for illustration purposesg print the line to the console.
+    # In addition just for illustration purposes print the line to the console.
     print(line)
 
 
