@@ -220,6 +220,13 @@ Process quoted text in strings.
 
 * regular expressions
 
+### [prescriptive grammar](prescriptive_grammar/prescriptive_grammar.ipynb)
+
+Search for violations of prescriptive grammatical rules in Moby Dick.
+
+* nltk
+* spacy
+
 ### [SQL](SQL/)
 
 Examples of SQL, either just as SQL or executed from Python via sqlite3.
