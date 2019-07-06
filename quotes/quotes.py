@@ -7,14 +7,22 @@ Work with quoted text in strings.
 import re
 
 
-# The start of quoted text:
-# Either of the quote characters, preceded by whitespace or start of string.
-# (Achieved as 'not non-whitespace'.)
-OPENQUOTE = r'(?<!\S)("|“)'
+# Quote characters.
+OPENQUOTE_CHARS = ['"', '“']
+CLOSEQUOTE_CHARS = ['"', '”']
 
-# The end of quoted text:
+# Regex for start of quoted text:
+# Either open quote character, preceded by whitespace or start of string.
+# (Achieved as 'not non-whitespace'.)
+OPENQUOTE_RE = r'(?<!\S)(' + '|'.join(OPENQUOTE_CHARS) + ')'
+
+# Regex for end of quoted text:
 # Either of the quote characters, preceded by non-whitespace.
-CLOSEQUOTE = r'(?<=\S)("|”)'
+CLOSEQUOTE_RE = r'(?<=\S)(' + '|'.join(CLOSEQUOTE_CHARS) + ')'
+
+# Regex for text inside quotes.
+# Any string of characters other than the quote characters.
+FILLER_RE = '[^' + ''.join(list(set(OPENQUOTE_CHARS + CLOSEQUOTE_CHARS))) + ']*'
 
 
 def find(text, word='', case=False):
@@ -56,18 +64,14 @@ def find(text, word='', case=False):
     else:
         target = ''
     
-    # Possible other text within the quote:
-    # Any string of characters other than the quote characters.
-    filler = '[^"“”]*'
-    
-    pattern = OPENQUOTE + filler + target + filler + CLOSEQUOTE
+    pattern = OPENQUOTE_RE + FILLER_RE + target + FILLER_RE + CLOSEQUOTE_RE
     
     # Yield just the matched text from each match object.
     for match in re.finditer(pattern, text, flags):
         yield match[0]
 
 
-def remove(text, ellipsis=' [...] ', invert=False):
+def remove(text, ellipsis=' ', invert=False):
     """
     Remove quotes from a string.
     
@@ -75,8 +79,8 @@ def remove(text, ellipsis=' [...] ', invert=False):
     text -- string from which to remove quotes
     
     Optional keyword arguments:
-    ellipsis   -- string to insert in place of quoted text
-                  defaults to ' [...] '
+    ellipsis   -- string to insert in place of removed text
+                  defaults to space (' ')
     invert     -- if True, remove unquoted text
                   defaults to False
     
@@ -84,7 +88,7 @@ def remove(text, ellipsis=' [...] ', invert=False):
     modified string
     """
     
-    pattern = OPENQUOTE + '.*?' + CLOSEQUOTE
+    pattern = OPENQUOTE_RE + '.*?' + CLOSEQUOTE_RE
     
     if invert:
         return ellipsis.join([match[0] for match in re.finditer(pattern, text)])
@@ -110,8 +114,8 @@ if __name__ == '__main__':
     
     # Test remove().
     print('\nRemove quotes:')
-    print(remove(exampleShortText))
+    print(remove(exampleShortText, ellipsis=' [...] '))
     
     # Test remove() inverted.
     print('\nRemove non-quotes:')
-    print(remove(exampleShortText, invert=True))
+    print(remove(exampleShortText, ellipsis=' [...] ', invert=True))
