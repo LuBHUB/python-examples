@@ -6,7 +6,6 @@ The user must identify pictures of crabs and lobsters.
 """
 
 import os
-import webbrowser
 
 from psychopy import visual, core, data, event
 
@@ -152,8 +151,12 @@ win.close()
 # To make this a csv file, we can specify the comma as the 'delimiter'.
 # By default the results are appended to the file if it exists.
 # We might not want this.
+# The fileCollisionMethod argument says what to do if the file already exists.
 resultsFilename = 'results_{}.csv'.format(subjectID)
-trials.saveAsWideText(resultsFilename, delim=',', appendFile=False)
+results = trials.saveAsWideText(resultsFilename, delim=',',
+                                appendFile=False, fileCollisionMethod='overwrite')
 
-# As a bonus, try to open the results file as a check.
-webbrowser.open(resultsFilename)
+# In addition, saveAsWideText returns a pandas DataFrame of results.
+# We can use this to carry out further analysis,
+# or just print it out for confirmation of the results.
+print(results)
