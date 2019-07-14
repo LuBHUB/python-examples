@@ -1,22 +1,26 @@
 # Project-specific ignores:
 
 # Files written when running examples.
-standard_library/example_folder/*
-vocab/vocab.txt
-vocab_test/my_vocab.json
-UK_US_spelling/spellings.json
-rose_tint/tinted_*
+crabegorization/results_*.csv
 imscramble/scrambled_example_*.jpg
-SQL/example.db
 optimization/.temp.txt
 optimization/temp_profile_output.txt
+rose_tint/tinted_*
 RT/results.csv
+SQL/example.db
+standard_library/example_folder/*
+UK_US_spelling/spellings.json
+vocab/vocab.txt
+vocab_test/my_vocab.json
 
 # Cloned GitHub repository
 git/example/*
 
 # My API key for musixmatch.com
 musixmatch/.musixmatch_API_key.txt
+
+# Because I occasionally accidentally open RStudio
+.Rhistory
 
 
 # General Python ignores:

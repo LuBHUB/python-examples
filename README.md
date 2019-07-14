@@ -150,6 +150,13 @@ Record the user's reaction times responding to letters. An introduction to Psych
 * keyboard responses
 * simple timing
 
+### [crabegorization](crabegorization/crabegorization.py)
+
+More Psychopy. Test the user's ability to tell crabs from lobsters. (Images courtesy of [Antónia Reindl](https://doi.org/10.3389/fpsyg.2018.01905).)
+
+* loading images
+* TrialHandler
+
 ## Advanced
 
 Examples for the Advanced Python class.

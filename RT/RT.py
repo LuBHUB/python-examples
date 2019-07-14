@@ -15,6 +15,28 @@ import webbrowser
 from psychopy import visual, core, event
 
 
+#%% General setup
+
+# Create a list of letters that the user will see on the screen.
+# (If they are clever, they may detect a subtle pattern.)
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+# We will usually want to save the subject's responses to a file.
+# There are a few ways of doing this.
+# But here we use the simplest and open a text file to write them into.
+resultsFilename = 'results.csv'
+f = open(resultsFilename, mode='w')
+
+# Write a header line into the file,
+# with column names for the letter displayed, response, and Reaction Time.
+f.write('Letter,Answer,RT\n')
+
+# It is convenient to also define a format for the lines of the results file.
+# Doing so at this point in our program allows us to compare this format easily with the header.
+# (Though later we will see alternative ways of handling this.)
+lineFormat = '{},{},{}\n'
+
+
 #%% Psychopy setup
 
 # The visual module's main starting point is the Window object.
@@ -36,28 +58,6 @@ stim = visual.TextStim(win, color='green', pos=(0, 0))
 # .reset() reset the timer
 # .getTime() get the time elapsed (in seconds) since the last reset
 timer = core.Clock()
-
-
-#%% General setup
-
-# Create a list of letters that the user will see on the screen.
-# (If they are clever, they may detect a subtle pattern.)
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-
-# We will usually want to save the user's responses to a file.
-# There are a few ways of doing this.
-# But here we use the simplest and open a text file to write them into.
-resultsFilename = 'results.csv'
-f = open(resultsFilename, mode='w')
-
-# Write a header line into the file,
-# with column names for the letter displayed, response, and Reaction Time.
-f.write('Letter,Answer,RT\n')
-
-# It is convenient to also define a format for the lines of the results file.
-# Doing so at this point in our program allows us to compare this format easily with the header.
-# (Though later we will see alternative ways of handling this.)
-lineFormat = '{},{},{}\n'
 
 
 #%% Main loop
@@ -87,7 +87,7 @@ for letter in letters:
     # The waitKeys() function from the event module waits for the user to press a key.
     # If we additionally input our Clock object as the timeStamped argument,
     # the output of this function will iclude the timing of the key press according to our Clock.
-    result = event.waitKeys(timeStamped=timer)
+    keyPress = event.waitKeys(timeStamped=timer)
     
     # The result of a timed key press is a list.
     # This list is a list of the keys that were pressed.
@@ -97,8 +97,8 @@ for letter in letters:
     # This list contains the name of the key pressed as its first entry
     # and the time of the key press as its second entry.
     # Given this knowledge, we can extract the key name and timing thus:
-    key = result[0][0] # ('first entry of first entry')
-    rt = result[0][1] # ('second entry of first entry')
+    key = keyPress[0][0] # ('first entry of first entry')
+    rt = keyPress[0][1] # ('second entry of first entry')
     
     # The final action of our loop is to write the results to file.
     # We use the line format string we defined during the setup above.
