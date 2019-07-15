@@ -58,7 +58,7 @@ def find(text, word='', case=False):
     
     # The target word:
     # The word preceded and followed by a non-word character.
-    # (This excludes other words that contain the target word.
+    # (This excludes other words that contain the target word.)
     if word:
         target = r'(?<=\W){}(?=\W)'.format(word)
     else:
@@ -99,7 +99,7 @@ def remove(text, ellipsis=' ', invert=False):
 if __name__ == '__main__':
     
     exampleText = open('example.txt').read()
-    exampleShortText = exampleText.split('\n')[0]
+    exampleShortText = exampleText.splitlines()[0]
     exampleWord = 'Fuck'
     
     # Test find().

@@ -76,8 +76,8 @@ for p in paras:
 # In the html tag this appears as, for example: class="bodytext"
 # So in a Python dictionary this would be: {'class':'bodytext'}
 
-# For our example webpage, there is only one piece of text that matches:
-# a 'p' tag with the class attribute 'bodytext'
+# For our example webpage, there is only one piece of text that matches the pattern
+# 'p' tag with the class attribute 'bodytext'.
 paras = content.find_all('p', attrs={'class':'bodytext'})
 print(len(paras))
 

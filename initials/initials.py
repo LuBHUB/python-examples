@@ -11,7 +11,7 @@ A section at the end of the program gives examples of using the functions.
 # We start simple, with a function to extract the first character from a string.
 # A function is defined using the keyword 'def', followed by the function name.
 # In parentheses we add any 'arguments' (i.e. inputs) that the function takes.
-# The following indented commands form the body of the function.
+# Subsequent indented commands form the body of the function.
 # These commands will be executed when we 'call' (i.e. use) the function.
 # The keyword 'return' defines what the function will return (i.e. what it will output).
 
@@ -47,14 +47,14 @@ def initials1(firstName, surname):
 
 
 # Our next function is again slightly more complex.
-# What if somebody might have three names, or might have two?
+# What if somebody might have one surname, or might have two?
 # Our function then needs to work with either two or three arguments.
 # We can make an argument optional by assigning it a default value, using =.
 # Here we do this for the second surname.
 # Then we check whether the user of the function entered a third name.
 # We return a different value depending on whether they did or not.
 
-def initials2(firstName, secondName, name3=''):
+def initials2(firstName, surname, surname2=''):
     """
     Get somebody's initials from either two or three names.
     
@@ -68,9 +68,9 @@ def initials2(firstName, secondName, name3=''):
     Returns:
     2- or 3-character str of initials
     """
-    inits = first_letter(firstName) + first_letter(secondName)
-    if name3:
-        inits += first_letter(name3)
+    inits = first_letter(firstName) + first_letter(surname)
+    if surname2:
+        inits += first_letter(surname2)
     return inits
 
 
@@ -78,7 +78,7 @@ def initials2(firstName, secondName, name3=''):
 # We would now like a function that can accept an indefinite number of names.
 # The * symbol indicates multiple possible arguments.
 # All the arguments input to the function will then be gathered in one variable.
-# By convention, this variable is called 'args'.
+# By convention, this variable is called 'args' (for 'arguments').
 # Though we could give it another name if we wished.
 # Our function can then loop through this variable or index entries in it.
 
@@ -100,7 +100,7 @@ def initials3(*args):
 
 #%% Example uses of our functions
 
-# Python has built-in function, some of which we have already met.
+# Python has built-in functions, some of which we have already met.
 # These functions are always available for use.
 # The len() function is one.
 len('supercalifragilisticexpialidocious')
@@ -125,7 +125,7 @@ help(initials1)
 # This works also for Python's own built-in functions.
 help(len)
 
-# A function whose arguments we have prefaced with * can take varyig number of arguments.
+# A function whose arguments we have prefaced with * can take a varying number of arguments.
 initials3('amanda')
 initials3('amanda', 'bananarama')
 initials3('amanda', 'mahatma', 'bananarama')

@@ -61,7 +61,7 @@ git reset
 git status
 
 # If you have changed your mind about the changes themselves you can even undo them.
-# The --hard option to git reset not only unstages changes but undoes them on the loca computer.
+# The --hard option to git reset not only unstages changes but undoes them on the local computer.
 git reset --hard
 git status
 

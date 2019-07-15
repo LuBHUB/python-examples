@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # The imageio module provides functions for reading and writing image files.
 # (In computing, 'io' stands for input/output,
 # and refers to reading and writing to and from various things,
-# most commonly files on the hard disk of the computer).
+# most commonly files on the hard disk of the computer.)
 
 # The imread() function reads in an image file.
 # We use it here to read the example image.
@@ -33,8 +33,8 @@ print(msg)
 
 
 # The pyplot module from matplotlib provides plotting functions.
-# The syntax of the functions is based on Matlab's plotting functions.
-# So as you can imagine it is pretty spectacularly awful.
+# The syntax of the functions is based on Matlab's plotting functions,
+# so as you can imagine it is pretty spectacularly awful.
 # But it is a widespread standard and can do lots of useful things.
 
 # Here we just use matplotlib's imshow() function to plot the image we loaded,

@@ -76,3 +76,4 @@ if __name__ == '__main__':
     # Test single-pixel scrambling.
     imscramble('example.jpg', fileNameOut='scrambled_example_2.jpg')
     webbrowser.open('scrambled_example_2.jpg')
+

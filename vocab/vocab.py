@@ -6,7 +6,7 @@ For example in order to store newly-learned vocabulary.
 """
 
 
-# Define the name of the data file.'to write to.
+# Define the name of the data file to write to.
 filename = 'vocab.txt'
 
 # Open the file in 'append' mode.

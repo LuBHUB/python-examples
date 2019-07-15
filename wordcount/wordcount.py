@@ -10,7 +10,7 @@ A program to print a report about a text file.
 def nlines(text):
     """
     Count the number of lines in a string,
-    by splitting on the newline character \n.
+    by splitting on the newline character \\n.
     
     arguments:
     text -- a string

@@ -11,8 +11,8 @@ topics = ['name', 'nationality', 'favorite color']
 # Set up an empty dictionary to store the answers.
 info = {}
 
-# Fill the dictionary with a loop going through the question list.
-# This is a more complex loop.
+# Fill the dictionary using a loop going through the question list.
+# This is a more complex loop with a few operations in each iteration.
 # For each topic format it into a neat question using string formatting.
 # Then ask the question.
 # Then store the answer in the dictionary.

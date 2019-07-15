@@ -51,7 +51,7 @@ TEMPFILENAME = '.temp.txt'
 def write_string_on_disk(n):
     """
     Write a string of n digits to a temporary file.
-    This version writes each digit to the file in a separate open and write.
+    This version writes each digit to the file in a separate write operation.
     Compare with: write_string_in_memory
     """
     with open(TEMPFILENAME, mode='w') as f:

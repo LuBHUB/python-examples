@@ -26,6 +26,6 @@ print(name.capitalize())
 # Other methods are more complex and require some input in the parentheses.
 # For example the format() method inserts something into the string
 # at the place where curly braces {} appear in the string.
-# (There is a little bit more to it, but that is the basic idea.)
+# (There is a little bit more to this, but that is the basic idea.)
 phrase = 'Goodbye {}, see you later.'
 print(phrase.format(name))

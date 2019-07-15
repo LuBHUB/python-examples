@@ -10,8 +10,8 @@ This program uses a loop with the break keyword.
 animal = 'african swallow'
 
 # And define a list of hints.
-# Since the ist is long, we can break it across several lines.
-# This is juts for clarity and doesn't affect the workings of the program.
+# Since the list is long, we can break it across several lines.
+# This is just for clarity and doesn't affect the workings of the program.
 hints = ['weighs five ounces',
          'beats its wings 43 times per second',
          'is not migratory',

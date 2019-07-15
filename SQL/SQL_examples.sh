@@ -2,7 +2,7 @@
 
 # This is a convenient single script that displays all the example SQL commands and their results.
 # The following lines pass the contents of the example .sql files on to sqlite3 with the | 'pipe'.
-# The options to sqlite3 specify which database files the commands should be executed with
+# The options to sqlite3 specify which database file the commands should be executed with
 # and tell sqlite3 to 'echo' the commands (i.e. print them out as they are executed).
 
 # The reading examples.
