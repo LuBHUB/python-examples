@@ -240,3 +240,10 @@ Examples of SQL, either just as SQL or executed from Python via sqlite3.
 
 * SQL
 
+### [partisan news](partisan_news/partisan_news.ipynb)
+
+An indtroduction to scikit-learn, for classifying neutral and partisan news stories.
+
+* machine learning
+* scikit-learn
+
