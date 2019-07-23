@@ -51,7 +51,7 @@ print(page.text)
 # bs stands for Beautiful Soup.
 # A BeautifulSoup object stores html text, along with methods for searching it.
 # We can create such an object from our html text.
-content = bs4.BeautifulSoup(page.text)
+content = bs4.BeautifulSoup(page.text, features='html.parser')
 
 # If we examine the resulting variable we see it has many methods.
 # Lots of these are methods for searching or retrieving parts of the text.

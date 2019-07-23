@@ -30,7 +30,7 @@ else:
 
 #%% Parse html
 
-content = bs4.BeautifulSoup(r.text, 'lxml')
+content = bs4.BeautifulSoup(r.text, features='html.parser')
 
 # Column headings giving the two languages:
 # bold text ('b') of class 'HeadingsSub'
