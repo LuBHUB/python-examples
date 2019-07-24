@@ -60,7 +60,7 @@ for xmlfilename in xmlfilenames:
     contents = BeautifulSoup(open(xmlfilename).read(), features='html.parser')
     orientation = contents.find('orientation').get_text()
     text = contents.find('maintext').get_text()
-    if text:
+    if text and text != 'The document has moved here.':
         with open(mapping[orientation], mode='a', encoding=output_encoding) as f:
             f.write(text + '\n')
         n_texts += 1
