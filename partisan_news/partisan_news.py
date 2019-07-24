@@ -283,7 +283,6 @@ features_by_idf = features[np.argsort(idf)]
 log_print('[most frequent terms]', *features_by_idf[:n_show])
 log_print('[least frequent terms]', *features_by_idf[-n_show:])
 
-
 # What are the most informative features?
 features_by_coef = features_used[np.argsort(coefs)]
 n_tied = sum(coefs == min(coefs))
@@ -317,7 +316,6 @@ plt.show()
 # Which texts did the model rate as most and least partisan?
 items_by_prob = np.array(train_items)[np.argsort(predicted_probs)]
 probs_sorted = predicted_probs[np.argsort(predicted_probs)]
-
 for i in [0, -1]:
     log_print('[{} partisan text]'.format(['least', 'most'][i]),
               items_by_prob[i],
@@ -354,10 +352,11 @@ scorers = {'accuracy': make_scorer(accuracy_score),
            'ROC_AUC': make_scorer(roc_auc_score, needs_threshold=True)}
 
 # Check the performance metrics in k-fold cross-validation.
+print('\n\n')
 cv_result = cross_validate(model, train_items, train_labels,
                            cv=parameters['k_folds'],
-                           scoring=scorers)
-
+                           scoring=scorers,
+                           verbose=3)
 log_print('[{}-fold cross-validation]'.format(parameters['k_folds']),
           *['{}\t{:.2f}\t{}'.format(key, np.mean(value), value) for key, value in cv_result.items()])
 
