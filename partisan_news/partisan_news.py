@@ -90,7 +90,7 @@ parameters = {
 # Terms that occur in a greater proportion of documents than this will be discarded.
 'max_frequency': 0.9,
 
-# What proportion best features to retain (0.0 to 1.0).
+# What proportion best features to retain.
 'p_best_features': 0.9,
 
 # How many folds to use in cross-validation.
@@ -114,7 +114,7 @@ with open(results_filename, mode='w', encoding=results_encoding) as f:
     f.write('PARTISAN NEWS\n{}\n\n'.format(timestamp))
 
 # Define a logging function for messages.
-# Writes the message to the results file and prints it out to the console.
+# Writes messages to the results file and prints them out to the console.
 def log_print(*msgs):
     with open(results_filename, mode='a', encoding=results_encoding) as f:
         f.write('\n')
@@ -182,7 +182,7 @@ nlp = spacy.load('en', disable=['parser', 'ner'])
 # Lemmatize to standard forms.
 # Make lowercase.
 # Get unigrams.
-# Get bigrams where valid tokens are adjacent.
+# Get ngrams where valid terms are adjacent.
 def preprocess(text):
     if parameters['remove_quotes']:
         text = quotes.remove(text)
@@ -253,7 +253,7 @@ model = Pipeline([('vectorize', vectorizer),
 # Fit the model to the training data.
 model.fit(train_items, train_labels)
 
-# Get the order of categories used.
+# Get the order of category labels used.
 label_order = list(classifier.classes_)
 
 # Get the names of the features and selected features.
@@ -322,7 +322,7 @@ for i in [0, -1]:
               '* P(partisan) = {:.2f}'.format(probs_sorted[i]))
 
 # Define a convenience function for assigning a probability of partisanship.
-# Take a raw text as input.
+# Take a single raw text as input.
 def prob_partisan(text):
     return model.predict_proba([text])[0, label_order.index('partisan')]
 
