@@ -1,5 +1,5 @@
 -- Some example SQL commands from SQL.ipynb gathered in one place for reference.
--- You can see the examples in action in the terminal by running the bash script examples.sh
+-- You can see the examples in action in the terminal by running the bash script SQL_examples.sh
 
 -- This file contains example commands for reading from an existing database.
 

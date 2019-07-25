@@ -1,5 +1,5 @@
 -- Some example SQL commands from SQL.ipynb gathered in one place for reference.
--- You can see the examples in action in the terminal by running the bash script examples.sh
+-- You can see the examples in action in the terminal by running the bash script SQL_examples.sh
 
 -- This file contains example commands for writing to a new database.
 
@@ -7,7 +7,7 @@
 
 
 -- When writing to a database, it is a good idea to group changes as a transaction.
--- Then when the changes are all made and checked, the transaction can be commited.
+-- Then when the changes are all made and checked, the transaction can be committed.
 -- Begin a transaction.
 BEGIN TRANSACTION;
 
