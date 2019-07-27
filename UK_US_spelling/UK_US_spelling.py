@@ -59,7 +59,7 @@ spellings = {x:y for x, y in spellings.items() if x.isalpha() and y.isalpha()}
 #%% Feck! Arse!
 
 # The omission of these vital words is truly baffling,
-# especially since 'sodomise' is in there.
+# especially since 'sodomise/sodomize' is in there.
 spellings['feck'] = 'fuck' # (I know, I know, it's not quite the same)
 spellings['arse'] = 'ass'
 

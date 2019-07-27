@@ -102,7 +102,7 @@ parameters = {
 #%% Results file
 
 # File name.
-timestamp = datetime.now().strftime('%d_%_b_%Y_%H%M')
+timestamp = datetime.now().strftime('%d_%b_%Y_%H%M')
 results_filename = timestamp + '.log'
 
 # Encoding.
