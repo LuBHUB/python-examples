@@ -57,7 +57,7 @@ mapping = {'mainstream': 'mainstream.txt',
 print('writing to text files')
 n_texts = 0
 for xmlfilename in xmlfilenames:
-    contents = BeautifulSoup(open(xmlfilename).read(), features='html.parser')
+    contents = BeautifulSoup(open(xmlfilename, encoding='utf-8').read(), features='lxml')
     orientation = contents.find('orientation').get_text()
     text = contents.find('maintext').get_text()
     if text and text != 'The document has moved here.':
