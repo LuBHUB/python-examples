@@ -117,7 +117,7 @@ Store words in a text file.
 * writing files
 * appending to files
 
-### [vocab test](vocab_test/vocab_test.py)
+### [vocab quiz](vocab_quiz/vocab_quiz.py)
 
 Store words and definitions as a dictionary in a JSON file.
 
