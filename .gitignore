@@ -1,3 +1,33 @@
+# Project-specific ignores:
+
+# Files written when running examples.
+crabegorization/results_*.csv
+imscramble/scrambled_example_*.jpg
+optimization/.temp.txt
+optimization/temp_profile_output.txt
+partisan_news/articles*
+partisan_news/model.pickle
+partisan_news/*.log
+rose_tint/tinted_*
+RT/results.csv
+SQL/example.db
+standard_library/example_folder/*
+UK_US_spelling/spellings.json
+vocab/vocab.txt
+vocab_test/my_vocab.json
+
+# Cloned GitHub repository
+git/example/*
+
+# My API key for musixmatch.com
+musixmatch/.musixmatch_API_key.txt
+
+# Because I occasionally accidentally open RStudio
+.Rhistory
+
+
+# General Python ignores:
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
